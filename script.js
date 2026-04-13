@@ -1,19 +1,42 @@
-document.querySelectorAll('.text-input').forEach(input => {
-  // Отслеживаем изменения значения
+document.querySelectorAll('.password-input').forEach(input => {
+  const label = input.previousElementSibling; // Получаем предыдущий элемент — наш label
+
+  // Отслеживаем ввод текста
   input.addEventListener('input', function() {
     if (this.value.trim() !== '') {
-      // Поле заполнено — добавляем класс, чтобы подпись оставалась поднятой
-      this.nextElementSibling.classList.add('always-up');
+      label.classList.add('filled'); // Поле заполнено — поднимаем подпись
     } else {
-      // Поле пустое — убираем класс
-      this.nextElementSibling.classList.remove('always-up');
+      label.classList.remove('filled'); // Поле пустое — опускаем
     }
   });
 
-  // Дополнительно отслеживаем фокус/разфокус для более плавного поведения
+  // Дополнительно отслеживаем фокус
   input.addEventListener('focus', function() {
-    if (this.value.trim() === '') {
-      this.nextElementSibling.classList.remove('always-up');
+    label.classList.add('focused');
+  });
+  input.addEventListener('blur', function() {
+    label.classList.remove('focused');
+  });
+});
+
+
+document.querySelectorAll('.login-input').forEach(input => {
+  const label = input.previousElementSibling; // Получаем предыдущий элемент — наш label
+
+  // Отслеживаем ввод текста
+  input.addEventListener('input', function() {
+    if (this.value.trim() !== '') {
+      label.classList.add('filled'); // Поле заполнено — поднимаем подпись
+    } else {
+      label.classList.remove('filled'); // Поле пустое — опускаем
     }
+  });
+
+  // Дополнительно отслеживаем фокус
+  input.addEventListener('focus', function() {
+    label.classList.add('focused');
+  });
+  input.addEventListener('blur', function() {
+    label.classList.remove('focused');
   });
 });

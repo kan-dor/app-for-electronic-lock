@@ -135,15 +135,34 @@ p{
 
 
 
-.login-input:focus + .login-label,
-.password-input:focus + .password-label,
-.form-group:hover .login-label,
-.form-group:hover .password-label,
-.login-input:not(:placeholder-shown) + .login-label,
-.password-input:not(:placeholder-shown) + .password-label,
-.login-input:valid + .login-label,
-.password-input:valid + .password-label {
+/* Поднимаем подпись, если поле заполнено (класс .filled) */
+.password-label.filled {
   top: -10px;
   font-size: 18px;
-  transform: translateY(-20px);
+  transform: translateY(-10px);
 }
+
+/* Поднимаем при наведении на контейнер, но только если поле пустое */
+.form-group1:hover .password-label:not(.filled) {
+  top: -10px;
+  font-size: 18px;
+  transform: translateY(-10px);
+}
+
+/* Поднимаем подпись, если поле заполнено (класс .filled) */
+.login-label.filled {
+  top: -10px;
+  font-size: 20px;
+  transform: translateY(-10px);
+}
+
+/* Поднимаем при наведении на контейнер, но только если поле пустое */
+.form-group:hover .login-label:not(.filled) {
+  top: -10px;
+  font-size: 20px;
+  transform: translateY(-10px);
+}
+
+
+
+
