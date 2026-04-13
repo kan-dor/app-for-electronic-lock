@@ -99,7 +99,7 @@ p{
   font-family: 'Sansation';
 }
 
-.login-input,
+/*.login-input,
 .password-input {
   width: 100%;
   padding: 15px 0;
@@ -110,7 +110,7 @@ p{
   font-size: 20px;
   font-family: 'Sansation';
   color: #EFF9FF;
-}
+}*/
 
 .login-label,
 .password-label {
