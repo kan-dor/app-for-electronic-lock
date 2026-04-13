@@ -99,7 +99,7 @@ p{
   font-family: 'Sansation';
 }
 
-/*.login-input,
+.login-input,
 .password-input {
   width: 100%;
   padding: 15px 0;
@@ -110,7 +110,7 @@ p{
   font-size: 20px;
   font-family: 'Sansation';
   color: #EFF9FF;
-}*/
+}
 
 .login-label,
 .password-label {
@@ -133,13 +133,13 @@ p{
   transition: width 0.3s ease;
 }
 
-/* Эффект при фокусе */
+/* Эффект при фокусе 
 .login-input:focus + .login-label,
 .password-input:focus + .password-label {
   top: -10px;
-  font-size: 12px; /* Уменьшаем размер при фокусе */
+  font-size: 12px; 
   transform: translateY(-20px);
-}
+}*/
 
 /* Эффект, если поле заполнено */
 .login-input:not(:placeholder-shown) + .login-label,
