@@ -133,15 +133,15 @@ p{
   transition: width 0.3s ease;
 }
 
-/* Эффект при фокусе 
+
 .login-input:focus + .login-label,
 .password-input:focus + .password-label {
   top: -10px;
   font-size: 12px; 
   transform: translateY(-20px);
-}*/
+}
 
-/* Эффект, если поле заполнено */
+/* Эффект, если поле заполнено 
 .login-input:not(:placeholder-shown) + .login-label,
 .password-input:not(:placeholder-shown) + .password-label,
 .login-input:valid + .login-label,
@@ -149,7 +149,7 @@ p{
   top: -10px;
   font-size: 12px;
   transform: translateY(-20px);
-}
+}*/
 
 /* Эффект при наведении на группу */
 .form-group:hover .login-label,
