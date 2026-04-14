@@ -1,0 +1,164 @@
+@font-face {
+    font-family: Sansation;
+    src: url(Sansation/Sansation-Bold.ttf);
+}
+
+body{
+    margin: 0;
+}
+.reg{
+    background-image: url(images/reg_bg.png); 
+    background-size: cover; 
+    width: 1200px; 
+    height: 700px;
+    background-repeat: no-repeat;
+
+    display: flex;
+}
+
+p{
+    width: 360px;
+    height: 27px;
+    color: #EFF9FF;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+    margin-top: 51px;
+    margin-left: 43px;
+    font-family: 'Sansation';
+}
+
+.rectangle{
+    position: relative;
+    height: 367px;
+    width: 445px;
+    background-color: rgba(67, 145, 204, 0.8);
+    border-radius: 45px;
+    margin-left: 377px;
+    margin-top: 166px;
+}
+
+.avt-button{
+    background-color: #EFF9FF;
+    color: black;
+    font-size: 20px;
+    font-family: 'Sansation';
+    padding: 12px 24px;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    width: 360px;
+    height: 73px;
+
+    margin-top: 11px;
+    margin-left: 37px;
+    
+}
+
+.avt-button:hover{
+    background-color: #DEEAF2;
+}
+
+.reg-button{
+    background-color: #EFF9FF;
+    color: black;
+    font-size: 20px;
+    font-family: 'Sansation';
+    padding: 12px 24px;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    width: 360px;
+    height: 73px;
+
+    margin-top: 22px;
+    margin-left: 37px;
+}
+
+.reg-button:hover{
+    background-color: #DEEAF2;
+}
+
+
+
+.form-group {
+  position: relative;
+  margin-bottom: 35px;
+  margin-left: 37px;
+  color: #EFF9FF;
+  font-size: 24px;
+  font-family: 'Sansation';
+}
+
+.form-group1 {
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 37px;
+  color: #EFF9FF;
+  font-size: 24px;
+  font-family: 'Sansation';
+}
+
+.login-input,
+.password-input {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-family: 'Sansation';
+  color: #EFF9FF;
+}
+
+.login-label,
+.password-label {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  font-size: 24px;
+  color: #EFF9FF;
+  pointer-events: none;
+  transition: all 0.3s ease; /* Исправлено: было width */
+}
+
+.underline {
+  position: absolute;
+  bottom: 0; /* Добавлено */
+  left: 0;  /* Добавлено */
+  height: 2px;
+  width: 371px; /* Исправлено: было 371px */
+  background-color: #EFF9FF;
+  transition: width 0.3s ease;
+}
+
+
+
+/* Поднимаем подпись, если поле заполнено (класс .filled) */
+.password-label.filled {
+  top: -10px;
+  font-size: 18px;
+  transform: translateY(-10px);
+}
+
+/* Поднимаем при наведении на контейнер, но только если поле пустое */
+.form-group1:hover .password-label:not(.filled) {
+  top: -10px;
+  font-size: 18px;
+  transform: translateY(-10px);
+}
+
+/* Поднимаем подпись, если поле заполнено (класс .filled) */
+.login-label.filled {
+  top: -10px;
+  font-size: 20px;
+  transform: translateY(-10px);
+}
+
+/* Поднимаем при наведении на контейнер, но только если поле пустое */
+.form-group:hover .login-label:not(.filled) {
+  top: -10px;
+  font-size: 20px;
+  transform: translateY(-10px);
+}
