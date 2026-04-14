@@ -1,7 +1,6 @@
 document.querySelectorAll('.password-input').forEach(input => {
-  const label = input.previousElementSibling; // Получаем предыдущий элемент — наш label
-
-  // Отслеживаем ввод текста
+  const label = input.previousElementSibling; 
+  
   input.addEventListener('input', function() {
     if (this.value.trim() !== '') {
       label.classList.add('filled'); // Поле заполнено — поднимаем подпись
@@ -10,7 +9,7 @@ document.querySelectorAll('.password-input').forEach(input => {
     }
   });
 
-  // Дополнительно отслеживаем фокус
+
   input.addEventListener('focus', function() {
     label.classList.add('focused');
   });

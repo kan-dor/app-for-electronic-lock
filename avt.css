@@ -59,25 +59,6 @@ p{
     background-color: #DEEAF2;
 }
 
-.reg-button{
-    background-color: #EFF9FF;
-    color: black;
-    font-size: 20px;
-    font-family: 'Sansation';
-    padding: 12px 24px;
-    border: none;
-    border-radius: 45px;
-    cursor: pointer;
-    width: 360px;
-    height: 73px;
-
-    margin-top: 22px;
-    margin-left: 37px;
-}
-
-.reg-button:hover{
-    background-color: #DEEAF2;
-}
 
 
 
@@ -120,43 +101,40 @@ p{
   font-size: 24px;
   color: #EFF9FF;
   pointer-events: none;
-  transition: all 0.3s ease; /* Исправлено: было width */
+  transition: all 0.3s ease; 
 }
 
 .underline {
   position: absolute;
-  bottom: 0; /* Добавлено */
-  left: 0;  /* Добавлено */
+  bottom: 0; 
+  left: 0;  
   height: 2px;
-  width: 371px; /* Исправлено: было 371px */
+  width: 371px; 
   background-color: #EFF9FF;
   transition: width 0.3s ease;
 }
 
 
 
-/* Поднимаем подпись, если поле заполнено (класс .filled) */
+
 .password-label.filled {
   top: -10px;
   font-size: 18px;
   transform: translateY(-10px);
 }
 
-/* Поднимаем при наведении на контейнер, но только если поле пустое */
 .form-group1:hover .password-label:not(.filled) {
   top: -10px;
   font-size: 18px;
   transform: translateY(-10px);
 }
 
-/* Поднимаем подпись, если поле заполнено (класс .filled) */
 .login-label.filled {
   top: -10px;
   font-size: 20px;
   transform: translateY(-10px);
 }
 
-/* Поднимаем при наведении на контейнер, но только если поле пустое */
 .form-group:hover .login-label:not(.filled) {
   top: -10px;
   font-size: 20px;
