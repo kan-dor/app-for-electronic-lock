@@ -16,7 +16,7 @@ body{
     display: flex;
 }
 
-p{
+.para{
     width: 360px;
     height: 27px;
     color: #EFF9FF;
@@ -25,6 +25,19 @@ p{
     text-align: center;
     margin-top: 51px;
     margin-left: 43px;
+    font-family: 'Sansation';
+}
+
+.paragra{
+    width: 360px;
+    height: 88px;
+    color: #EFF9FF;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+    margin-top: 51px;
+    margin-left: 43px;
+    margin-bottom: 48px;
     font-family: 'Sansation';
 }
 
@@ -50,7 +63,7 @@ p{
     width: 360px;
     height: 73px;
 
-    margin-top: 11px;
+    margin-top: 0px;
     margin-left: 37px;
     
 }
