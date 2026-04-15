@@ -9,17 +9,16 @@ body{
     margin: 0px;
 }
 .buttons{
-    display: flex;
     width: 1200px;
+    display: inline-flex;
     height: 100px;
-    padding-right: 100%;
     background-color: #4391CC;
 }
 
 
 .main{
+    text-align: center;
     width: 158px;
-    height: 100px;
     border: 0px;
     background-color: #EFF9FF;
     color: #4391CC;
@@ -79,19 +78,100 @@ body{
 }
 
 .profile-logo {
-    margin-left: 600px;
+    margin-left: 498px;
     background-color: #4391CC;
     border: 0;
-    background-image: url('images/profile-1.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; /* или cover, в зависимости от нужд */
+    background-size: contain;
     width: 70px;
     cursor: pointer; /* курсор-указатель при наведении */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+.profile1, .profile2 {
+  position: absolute;
+  width: 50px;
+  top: 25px;
+    left: 1140px;
+}
 
 .profile-logo:hover {
+    width: 70px;
   background-color: #EFF9FF;
   background-image: url('images/profile-2.png');
+}
+
+.profile1 {
+  z-index: 3; /* По умолчанию ниже */
+  background-image: url('images/profile-1.png');
+}
+
+.profile2 {
+  z-index: 2; /* По умолчанию скрыт под .profile1 */
+  background-image: url('images/profile-2.png');
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.profile-logo:hover .profile2 {
+  z-index: 4; /* При наведении выходит наверх */
+  opacity: 1; /* И становится видимым */
+}
+
+.main-window{
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    background-color: #EFF9FF;
+    text-align: center;
+}
+
+.add-button{
+    margin-left: 256px;
+    margin-top: 42px;
+
+    width: 681px;
+    height: 116px;
+    background-color: #EFF9FF;
+    border-radius: 30px;
+    border-width: 4px;
+    border-color: #4391CC;
+    color: #4391CC;
+    font-family: 'Sansation';
+    align-content: center;
+    font-size: 30px;
+    cursor: pointer;
+
+    display: block;
+}
+
+.plus{
+    display: flex;
+    justify-content: center;
+}
+
+
+.add-button {
+  display: flex;
+  flex-direction: column; /* элементы ставятся друг под другом */
+  justify-content: center; /* по вертикали по центру */
+  align-items: center; /* по горизонтали по центру */
+  width: 681px;
+  height: 116px;
+  background-color: #EFF9FF;
+  border-radius: 30px;
+  border: 4px solid #4391CC;
+  color: #4391CC;
+  font-family: 'Sansation';
+  font-size: 30px;
+  cursor: pointer;
+  gap: 10px; /* расстояние между текстом и изображением (регулируйте) */
+}
+
+.plus {
+  width: 30px; /* размер изображения, регулируйте по необходимости */
+  height: 30px;
+}
+
+
+.add-button:hover{
+    background-color: #DEEAF2;
 }
