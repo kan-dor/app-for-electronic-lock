@@ -41,7 +41,6 @@ body{
     font-size: 24px;
     font-family: 'Sansation';
     padding-left: 0px;
-    cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .locks:hover{
@@ -88,6 +87,7 @@ body{
     border: 0;
     background-size: contain;
     width: 70px;
+    height: 100px;
     cursor: pointer; /* курсор-указатель при наведении */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -99,6 +99,7 @@ body{
 }
 
 .profile-logo:hover {
+    height: 100px;
     width: 70px;
   background-color: #EFF9FF;
   background-image: url('images/profile-2.png');
