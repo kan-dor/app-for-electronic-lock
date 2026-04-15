@@ -11,7 +11,6 @@ body{
 .buttons{
     width: 1200px;
     display: inline-flex;
-
     height: 100px;
     background-color: #4391CC;
 }
