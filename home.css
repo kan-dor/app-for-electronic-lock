@@ -4,13 +4,13 @@
 }
 
 body{
-    width: 1200px;
+    width: 700px;
     height: 700px;
     margin: 0px;
 }
 .buttons{
     display: flex;
-    width: 1200px;
+    width: 700px;
     height: 100px;
     padding-right: 100%;
     background-color: #4391CC;
