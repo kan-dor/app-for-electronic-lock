@@ -17,22 +17,27 @@ body{
 
 
 .main{
-    text-align: center;
     width: 158px;
+    height: 100px;
     border: 0px;
-    background-color: #EFF9FF;
-    color: #4391CC;
+    background-color: #4391CC;
+    color: #EFF9FF;
     font-size: 24px;
     font-family: 'Sansation';
-    padding-right: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.main:hover{
+    color: #4391CC;
+    background-color: #EFF9FF;
 }
 
 .locks{
     width: 158px;
     height: 100px;
     border: 0px;
-    background-color: #4391CC;
-    color: #EFF9FF;
+    background-color: #EFF9FF;
+    color: #4391CC;
     font-size: 24px;
     font-family: 'Sansation';
     padding-left: 0px;
