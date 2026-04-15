@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Sansation;
+    src: url(Sansation/Sansation-Bold.ttf);
+}
+
+body{
+    width: 1200px;
+    height: 700px;
+    margin: 0px;
+}
+.buttons{
+    display: flex;
+    width: 1200px;
+    height: 100px;
+    padding-right: 100%;
+    background-color: #4391CC;
+}
+
+
+.main{
+    width: 158px;
+    height: 100px;
+    border: 0px;
+    background-color: #EFF9FF;
+    color: #4391CC;
+    font-size: 24px;
+    font-family: 'Sansation';
+    padding-right: 0px;
+}
+
+.locks{
+    width: 158px;
+    height: 100px;
+    border: 0px;
+    background-color: #4391CC;
+    color: #EFF9FF;
+    font-size: 24px;
+    font-family: 'Sansation';
+    padding-left: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.locks:hover{
+    color: #4391CC;
+    background-color: #EFF9FF;
+    
+}
+
+.cams{
+    width: 158px;
+    height: 100px;
+    border: 0px;
+    background-color: #4391CC;
+    color: #EFF9FF;
+    font-size: 24px;
+    font-family: 'Sansation';
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.cams:hover{
+    color: #4391CC;
+    background-color: #EFF9FF;
+}
+
+.datchiki{
+    width: 158px;
+    height: 100px;
+    border: 0px;
+    background-color: #4391CC;
+    color: #EFF9FF;
+    font-size: 24px;
+    font-family: 'Sansation';
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.datchiki:hover{
+    color: #4391CC;
+    background-color: #EFF9FF;
+}
+
+.profile-logo {
+    margin-left: 600px;
+    background-color: #4391CC;
+    border: 0;
+    background-image: url('images/profile-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* или cover, в зависимости от нужд */
+    width: 70px;
+    cursor: pointer; /* курсор-указатель при наведении */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-logo:hover {
+  background-color: #EFF9FF;
+  background-image: url('images/profile-2.png');
+}

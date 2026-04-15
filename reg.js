@@ -40,3 +40,32 @@ document.querySelectorAll('.login-input').forEach(input => {
     label.classList.remove('focused');
   });
 });
+
+document.getElementById('registration-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+
+      try {
+        const response = await fetch('/api/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          alert('Пользователь успешно зарегистрирован!');
+          this.reset();
+        } else {
+          alert('Ошибка: ' + result.error);
+        }
+      } catch (error) {
+        console.error('Ошибка:', error);
+        alert('Произошла ошибка при отправке данных');
+      }
+    });
